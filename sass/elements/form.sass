@@ -6,6 +6,8 @@ $input-shadow: inset 0 1px 2px rgba($black, 0.1) !default
 $input-hover-color: $grey-darker !default
 $input-hover-border-color: $grey-light !default
 
+$input-show-box-shadow-by-default: false !default
+
 $input-focus-color: $grey-darker !default
 $input-focus-border-color: $link !default
 $input-focus-box-shadow-size: 0 0 0 0.125em !default
@@ -80,6 +82,8 @@ $help-size: $size-small !default
     $color: nth($pair, 1)
     &.is-#{$name}
       border-color: $color
+      @if $input-show-box-shadow-by-default
+        box-shadow: $input-focus-box-shadow-size rgba($color, $input-focus-box-shadow-alpha)
       &:focus,
       &.is-focused,
       &:active,
@@ -181,6 +185,8 @@ $help-size: $size-small !default
     $color: nth($pair, 1)
     &.is-#{$name} select
       border-color: $color
+      @if $input-show-box-shadow-by-default
+        box-shadow: $input-focus-box-shadow-size rgba($color, $input-focus-box-shadow-alpha)
       &:focus,
       &.is-focused,
       &:active,

@@ -1,6 +1,6 @@
 {
   "name": "@ferguson-enterprises/ferguson-design-system",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Matthew Evert <matthew.evert@ferguson.com>",
   "description": "Customizable CSS bootstrap for Ferguson products",
   "main": "fds.sass",
@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/FergusonUX/ferguson-design-system/issues"
   },
-  "homepage": "https://github.com/FergusonUX/ferguson-design-system#readme"
+  "homepage": "https://github.com/FergusonUX/ferguson-design-system#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^3.1.0",
+    "http": "0.0.0",
+    "st": "^1.2.2"
+  }
 }

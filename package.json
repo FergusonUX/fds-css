@@ -1,6 +1,6 @@
 {
   "name": "@ferguson-enterprises/ferguson-design-system",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Matthew Evert <matthew.evert@ferguson.com>",
   "description": "Customizable CSS bootstrap for Ferguson products",
   "main": "fds.sass",

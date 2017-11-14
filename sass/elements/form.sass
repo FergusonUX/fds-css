@@ -9,6 +9,7 @@ $input-hover-border-color: $grey-light !default
 $input-focus-color: $grey-darker !default
 $input-focus-border-color: $link !default
 $input-focus-box-shadow-size: 0 0 0 0.125em !default
+$input-focus-box-shadow-alpha: 0.25 !default
 $input-focus-box-shadow-color: rgba($link, 0.25) !default
 
 $input-disabled-color: $text-light !default
@@ -83,7 +84,7 @@ $help-size: $size-small !default
       &.is-focused,
       &:active,
       &.is-active
-        box-shadow: $input-focus-box-shadow-size rgba($color, 0.25)
+        box-shadow: $input-focus-box-shadow-size rgba($color, $input-focus-box-shadow-alpha)
   // Sizes
   &.is-small
     +control-small
@@ -184,7 +185,7 @@ $help-size: $size-small !default
       &.is-focused,
       &:active,
       &.is-active
-        box-shadow: $input-focus-box-shadow-size rgba($color, 0.25)
+        box-shadow: $input-focus-box-shadow-size rgba($color, $input-focus-box-shadow-alpha)
   // Sizes
   &.is-small
     +control-small
@@ -240,7 +241,7 @@ $help-size: $size-small !default
       &.is-focused
         .file-cta
           border-color: transparent
-          box-shadow: 0 0 0.5em rgba($color, 0.25)
+          box-shadow: 0 0 0.5em rgba($color, $input-focus-box-shadow-alpha)
           color: $color-invert
       &:active,
       &.is-active

@@ -1,6 +1,6 @@
 {
   "name": "@ferguson-enterprises/fds-css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Matthew Evert <matthew.evert@ferguson.com>",
   "description": "A CSS Framework for creating aesthetically pleasing and consistent user-interfaces",
   "main": "fds.sass",

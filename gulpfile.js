@@ -17,12 +17,12 @@ gulp.task('compile-sass', function() {
 // });
 
 gulp.task('watch', ['server'], function() {
-  livereload.listen({ basePath: 'tests' });
+  livereload.listen({ basePath: '' });
   gulp.watch('./sass/**/*.sass', ['compile-sass']);
 });
 
 gulp.task('server', function(done) {
   http.createServer(
-    st({ path: __dirname + '/tests', index: 'test.html', cache: false })
-  ).listen(8080, done);
+    st({ path: __dirname + '', index: 'test.html', cache: false })
+  ).listen(8090, done);
 });

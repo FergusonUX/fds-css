@@ -171,6 +171,26 @@ $button-static-border-color: $grey-lighter !default
           border-color: $color-invert
           box-shadow: none
           color: $color-invert
+      @each $name, $pair in $color-shades
+        // $color: $value
+        // $color-invert: nth($pair, 2)
+        // $color-border: nth($pair, 3)
+        &.is-#{$name}
+          @if nth($pair, 1) == 'tint'
+            background-color: tint($color, nth($pair, 2))
+            color: findColorInvert(tint($color, nth($pair, 2)))
+          @else
+            background-color: shade($color, nth($pair, 2))
+            color: findColorInvert(shade($color, nth($pair, 2)))
+          &:hover,
+          &.is-hovered
+            @if nth($pair, 1) == 'tint'
+              background-color: darken(tint($color, nth($pair, 2)), 2.5%)
+              color: findColorInvert(tint($color, nth($pair, 2)))
+            @else
+              background-color: darken(shade($color, nth($pair, 2)), 2.5%)
+              color: findColorInvert(shade($color, nth($pair, 2)))
+            border-color: $color-border
   // Sizes
   &.is-small
     +button-small

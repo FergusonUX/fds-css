@@ -1,71 +1,64 @@
-$primary: $curious-blue !default
-$secondary: $silver !default
-$brand: $regal-blue !default
+// primary color values
+$color-primary: $azure-radiance !default
+$color-primary-invert: findColorInvert($color-primary) !default
+$color-primary-border: transparent !default
 
-$info: $cyan !default
-$success: $green !default
-$warning: $yellow !default
-$danger: $red !default
+$color-secondary: $fun-blue !default
+$color-secondary-invert: findColorInvert($color-secondary) !default
+$color-secondary-border: transparent !default
 
+// $color-tertiary: $azure-radiance !default
+// $color-tertiary-invert: findColorInvert($color-tertiary) !default
+// $color-tertiary-border: transparent !default
+
+$color-brand: $regal-blue !default
+$color-brand-invert: findColorInvert($color-brand) !default
+$color-brand-border: transparent !default
+
+//status color values
+$color-info: $cyan !default
+$color-info-invert: findColorInvert($color-info) !default
+$color-info-border: transparent !default
+
+$color-success: $green !default
+$color-success-invert: findColorInvert($color-success) !default
+$color-success-border: transparent !default
+
+$color-warning: $yellow !default
+$color-warning-invert: findColorInvert($color-warning) !default
+$color-warning-border: transparent !default
+
+$color-danger: $red !default
+$color-danger-invert: findColorInvert($color-danger) !default
+$color-danger-border: transparent !default
+
+// light/dark color values
 $light: $white-ter !default
 $dark: $grey-darker !default
-
-// Invert colors
-
-$orange-invert: findColorInvert($orange) !default
-$yellow-invert: findColorInvert($yellow) !default
-$green-invert: findColorInvert($green) !default
-$turquoise-invert: findColorInvert($turquoise) !default
-$cyan-invert: findColorInvert($cyan) !default
-$blue-invert: findColorInvert($blue) !default
-$purple-invert: findColorInvert($purple) !default
-$red-invert: findColorInvert($red) !default
-
-$primary-invert: findColorInvert($primary) !default
-$secondary-invert: findColorInvert($secondary) !default
-
-$info-invert: $cyan-invert !default
-$success-invert: $green-invert !default
-$warning-invert: $yellow-invert !default
-$danger-invert: $red-invert !default
 $light-invert: $dark !default
 $dark-invert: $light !default
 
-// Border colors
-$primary-border: transparent !default
-$secondary-border: transparent !default
-$info-border: transparent !default
-$success-border: transparent !default
-$warning-border: transparent !default
-$danger-border: transparent !default
-
 
 // General colors
-
 $background: $white-ter !default
-
 $border: $grey-lighter !default
 $border-hover: $grey-light !default
 
 // Text colors
-
 $text: $grey-dark !default
 $text-invert: findColorInvert($text) !default
 $text-light: $grey !default
 $text-strong: $grey-darker !default
 
 // Code colors
-
 $code: $red !default
 $code-background: $background !default
-
 $pre: $text !default
 $pre-background: $background !default
 
 // Link colors
-
 $link: $curious-blue !default
-$link-invert: $blue-invert !default
+$link-invert: findColorInvert($link) !default
 $link-visited: $purple !default
 
 $link-hover: $grey-darker !default
@@ -78,7 +71,6 @@ $link-active: $grey-darker !default
 $link-active-border: $grey-dark !default
 
 // Typography
-
 $family-primary: $family-sans-serif !default
 $family-code: $family-monospace !default
 
@@ -87,9 +79,36 @@ $size-normal: $size-6 !default
 $size-medium: $size-5 !default
 $size-large: $size-4 !default
 
-// Lists and maps
 
-$colors: ("white": ($white, $black, transparent), "black": ($black, $white, transparent), "light": ($light, $light-invert, transparent), "dark": ($dark, $dark-invert, transparent), "primary": ($primary, $primary-invert, $primary-border), "secondary": ($secondary, $secondary-invert, $secondary-border), "link": ($link, $link-invert, transparent), "info": ($info, $info-invert, $info-border), "success": ($success, $success-invert, $success-border), "warning": ($warning, $warning-invert, $warning-border), "danger": ($danger, $danger-invert, $danger-border)) !default
-$shades: ("black-bis": $black-bis, "black-ter": $black-ter, "grey-darker": $grey-darker, "grey-dark": $grey-dark, "grey": $grey, "grey-light": $grey-light, "grey-lighter": $grey-lighter, "white-ter": $white-ter, "white-bis": $white-bis) !default
+// Lists and maps
+$color-shades: ("shade-1": ("tint", 60),
+"shade-2": ("tint", 40),
+"shade-3": ("tint", 20),
+"shade-5": ("shade", 20),
+"shade-6": ("shade", 40),
+"shade-7": ("shade", 60))
+
+$colors: ( "white": ($white, $black, transparent),
+"black": ($black, $white, transparent),
+"light": ($light, $light-invert, transparent),
+"dark": ($dark, $dark-invert, transparent),
+"primary": ($color-primary, $color-primary-invert, $color-primary-border),
+"secondary": ($color-secondary, $color-secondary-invert, $color-secondary-border),
+"brand": ($color-brand, $color-brand-invert, $color-brand-border),
+"link": ($link, $link-invert, transparent),
+"info": ($color-info, $color-info-invert, $color-info-border),
+"success": ($color-success, $color-success-invert, $color-success-border),
+"warning": ($color-warning, $color-warning-invert, $color-warning-border),
+"danger": ($color-danger, $color-danger-invert, $color-danger-border)) !default
+
+$shades: ( "black-bis": $black-bis,
+"black-ter": $black-ter,
+"grey-darker": $grey-darker,
+"grey-dark": $grey-dark,
+"grey": $grey,
+"grey-light": $grey-light,
+"grey-lighter": $grey-lighter,
+"white-ter": $white-ter,
+"white-bis": $white-bis) !default
 
 $sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7 !default

@@ -1,3 +1,8 @@
+// brand color values
+$color-brand: $color-ferguson-blue !default
+$color-brand-invert: findColorInvert($color-brand) !default
+$color-brand-border: transparent !default
+
 // primary color values
 $color-primary: $color-azure-radiance !default
 $color-primary-invert: findColorInvert($color-primary) !default
@@ -6,14 +11,6 @@ $color-primary-border: transparent !default
 $color-secondary: $color-fun-blue !default
 $color-secondary-invert: findColorInvert($color-secondary) !default
 $color-secondary-border: transparent !default
-
-// $color-tertiary: $color-azure-radiance !default
-// $color-tertiary-invert: findColorInvert($color-tertiary) !default
-// $color-tertiary-border: transparent !default
-
-$color-brand: $color-ferguson-blue !default
-$color-brand-invert: findColorInvert($color-brand) !default
-$color-brand-border: transparent !default
 
 //status color values
 $color-info: $color-curious-blue !default
@@ -45,7 +42,7 @@ $border: $color-grey-lighter !default
 $border-hover: $color-grey-light !default
 
 // Text colors
-$text: $color-grey-dark !default
+$text: $color-ferguson-gray !default
 $text-invert: findColorInvert($text) !default
 $text-light: $color-grey !default
 $text-strong: $color-grey-darker !default
@@ -92,9 +89,9 @@ $colors: ( "white": ($color-white, $color-black, transparent),
 "black": ($color-black, $color-white, transparent),
 "light": ($light, $light-invert, transparent),
 "dark": ($dark, $dark-invert, transparent),
+"brand": ($color-brand, $color-brand-invert, $color-brand-border),
 "primary": ($color-primary, $color-primary-invert, $color-primary-border),
 "secondary": ($color-secondary, $color-secondary-invert, $color-secondary-border),
-"brand": ($color-brand, $color-brand-invert, $color-brand-border),
 "link": ($link, $link-invert, transparent),
 "info": ($color-info, $color-info-invert, $color-info-border),
 "success": ($color-success, $color-success-invert, $color-success-border),

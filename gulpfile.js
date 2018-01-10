@@ -17,7 +17,7 @@ gulp.task('compile-sass', function() {
 // });
 
 gulp.task('watch', ['server'], function() {
-  livereload.listen({ basePath: '' });
+  // livereload.listen({ basePath: '' });
   gulp.watch('./sass/**/*.sass', ['compile-sass']);
 });
 

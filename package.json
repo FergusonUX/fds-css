@@ -1,6 +1,6 @@
 {
   "name": "@ferguson-enterprises/fds-css",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "Matthew Evert <matthew.evert@ferguson.com>",
   "description": "A CSS Framework for creating aesthetically pleasing and consistent user-interfaces",
   "main": "fds.sass",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "http": "0.0.0",
     "st": "^1.2.2"
